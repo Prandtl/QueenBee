@@ -6,9 +6,7 @@ def start_dealing(ser, sock):
     while True:
         line = ser.readline().decode("utf-8").strip()
         values = line.split(',')
-        msg = {"values": values}
         sock.send_json(msg)
-        print(msg)
 
 def dealer():
     reconnect_interval = 0.5;

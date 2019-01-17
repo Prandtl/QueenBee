@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+echo "Starting up!"
+
+python3 dealer.py &
+python3 streamer_device.py &
+python3 task_worker.py &
+
+echo "done!"
