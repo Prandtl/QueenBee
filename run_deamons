@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 echo "Starting up!"
 
-python3 dealer.py &
-python3 streamer_device.py &
-python3 task_worker.py &
+python3 distance_data_dealer.py &
+python3 distance_data_streamer_device.py &
+python3 particle_filter_worker.py &
 
 echo "done!"
