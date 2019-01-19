@@ -1,0 +1,5 @@
+echo "DEAMONS ARE LOOSE!"
+echo "RUN AWAY!!!"
+
+python3 particle_filter_generator.py &
+python3 particle_filter_streamer_device.py &
